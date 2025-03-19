@@ -1,9 +1,9 @@
 
 const stringLength = function (string, line) {
-  console.log(string.length >= line);
+  console.log(string.length <= line);
 };
 
-stringLength('qwertyqwerty', 30);
+stringLength('qwerty', 5);
 
 const polindrome = function (string) {
   const register = string.toLowerCase();
