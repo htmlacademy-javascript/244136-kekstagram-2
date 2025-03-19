@@ -6,14 +6,15 @@ const stringLength = function (string, line) {
 stringLength('qwertyqwerty', 30);
 
 const polindrome = function (string) {
-  const normolizedString = string.toLowerCase().replaceAll(' ', '');
+  const register = string.toLowerCase();
+  const normolizedString = register.replaceAll(' ', '');
   let reverse = '';
 
   for (let i = normolizedString.length - 1; i >= 0; i--) {
-    reverse += string[i];
+    reverse += normolizedString[i];
   }
   return normolizedString === reverse;
 };
 
-console.log(polindrome('доводw'));
+console.log(polindrome('Лёша на полке клопа нашёл '));
 
